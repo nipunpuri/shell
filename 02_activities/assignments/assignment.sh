@@ -30,6 +30,7 @@ mkdir data
 # 2. Move the ./rawdata directory to ./data/raw
 
 mkdir data/raw
+mkdir data/raw/rawdata
 mv rawdata/* data/raw/
 
 # 3. List the contents of the ./data/raw directory
