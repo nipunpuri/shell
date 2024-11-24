@@ -9,6 +9,7 @@ set -x
 # for a new project. It also creates a README file with the
 # project name and a brief description of the project.
 # Then it unzips the raw data provided by the client.
+# adding a dummy change
 
 mkdir analysis output
 touch README.md
@@ -26,7 +27,6 @@ unzip rawdata.zip
 
 mkdir data
 
-
 # 2. Move the ./rawdata directory to ./data/raw
 
 mkdir data/raw
@@ -37,7 +37,10 @@ mv rawdata/* data/raw/
 ls data/raw
 
 # 4. In ./data/processed, create the following directories: server_logs, user_logs, and event_logs
-mkdir -p data/processed/server_logs data/processed/user_logs data/processed/event_logs
+mkdir data/processed
+mkdir data/processed/server_logs
+mkdir data/processed/user_logs
+mkdir data/processed/event_logs
 
 # 5. Copy all server log files (files with "server" in the name AND a .log extension) from ./data/raw to ./data/processed/server_logs
 cp data/raw/server* data/processed/server_logs
