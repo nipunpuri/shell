@@ -3,6 +3,7 @@ set -x
 
 ############################################
 # DSI CONSULTING INC. Project setup script #
+# Adding a new comment so that I can push again
 ############################################
 # This script creates standard analysis and output directories
 # for a new project. It also creates a README file with the
